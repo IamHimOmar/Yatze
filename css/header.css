@@ -39,8 +39,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  border-left: 2px solid green;
-
+  border-left: 2px solid green;  
 }
 #options li{
   border-bottom: 2px solid green;

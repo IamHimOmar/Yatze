@@ -7,9 +7,10 @@ session_start();
 // instantiate a template Parser object
 if ((isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == 1)) {
   $parser=new htmlParser('html/mainpage.html');
+
 }
 else {
-  $parser=new htmlParser('html/mainpage.html');
+  header("Location: ../Yatze/login.php");
 }
 
 // define the key-value array
