@@ -1,0 +1,31 @@
+.highScore{
+  position: relative;
+  width: 230px;
+  background: #FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 20px auto;
+  padding: 20px;
+}
+.highScore h1{
+  display: inline;
+  padding: 5px;
+}
+.highScore:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.Classment{
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  height: 30px;
+  padding: 5px;
+}
+.Infos{
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: auto;
+  padding: 5px;
+}

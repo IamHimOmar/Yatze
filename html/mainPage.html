@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{title}</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
+    <link rel="stylesheet" type="text/css" href="css/scoreBoard.css">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <script>
+      window.onload = function() {
+        if(window.location.href.indexOf("login") > -1) {
+          HideOptions();
+       }
+       else {
+          ShowOptions();
+       }
+       DiceValues();                
+      };
+    </script>
+  </head>
+  <body>
+
+        {header}
+
+        {scoreboard}
+        {game}
+        {winpopup}
+        <script src="js/gameplay.js"></script>
+  </body>
+</html>

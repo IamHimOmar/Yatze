@@ -1,0 +1,64 @@
+.loginContainer{
+	margin: 40px auto;
+	background: white;
+	width: 50%;
+	padding: 10px 40px 10px 40px;
+	border-radius: 10px;
+	position: relative;  
+}
+.loginContainer .loginHeader{
+	text-align: center;
+	border-bottom: 1px solid #EEE;
+}
+.loginContainer .loginForm{
+	padding-top: 20px;
+}
+.loginContainer .field-wrap > *{
+	width: 100%;
+	font-size: 24px;
+}
+.loginContainer .field-wrap{
+	width: 80%;
+	margin: 0 auto;
+}
+.loginContainer label{
+  display: block;
+	text-align: center;
+	padding: 5px 0px;
+}
+.loginContainer p{
+	padding: 10px 0px;
+	width: auto;
+	text-align: center;
+}
+.loginContainer .button{
+	display: block;
+	position: relative;
+	padding: 10px 30px;
+	width: 30%;
+	margin: 25px auto 10px;
+	background: #3897f0;
+  border-color: #3897f0;
+  color: #fff;
+	cursor: pointer;
+	border: 1px solid #3897f0;
+	outline: none;
+	overflow: hidden;
+}
+.loginContainer .new-account{
+	width: auto;
+	float: right;
+}
+.loginForm::after{
+	  content: "";
+	  display: block;
+		clear: both;
+}
+.fieldwrap{
+	float:left;
+}
+.fieldwrap:after{
+	content: "";
+	display: block;
+	clear: both;
+}
