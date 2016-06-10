@@ -50,6 +50,10 @@ body{
   width: calc(50% - 40px);
 	min-width: 140px;
 }
+#HighScoreBtn > a, #ReplayBtn > a{
+	text-decoration: none;
+	color: black;
+}
 #closeBtn{
 	position: absolute;
 	top: -17px;

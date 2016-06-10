@@ -24,6 +24,6 @@
           <button class="button"/>Login</button>
 
           </form>
-          <p class="new-account"><a href="#">Create new account</a></p>
+          <p class="new-account"><a href="#" onclick="SwitchForm()">Create new account</a></p>
     </div>
 </div>

@@ -13,7 +13,7 @@ $result = mysqli_query($dbc,$query)or die('error');
 if (mysqli_num_rows($result)==null) {
 	mysqli_close($dbc);
 	echo "not logged";
-	header('refresh:2;url=index.php');
+	header('refresh:1;url=../login.php');
 	exit();
 }
 
@@ -27,12 +27,12 @@ $row=mysqli_fetch_array($result);
  	session_start();
  	$_SESSION['name'] = $row['username'];
  	$_SESSION['loggedin']= 1;
- 	echo "succesfull login. Welcome,".$username;
+ 	echo "succesfull login. Welcome,".$_SESSION['name'];
  	header("refresh:1;url=../index.php");
  }
  else{
  	echo "Wrong username or password";
- 	//header("refresh:1;url=index.php");
+ 	header("refresh:1;url=index.php");
  }
 
 

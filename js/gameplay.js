@@ -222,11 +222,17 @@ function SaveScore(score,buttonId) {
     document.getElementById(score).style.color = "red";
     document.getElementById('score14').innerHTML = totalScore;
     buttonId.style.display = "none";
-    RollsLeft = 3;
+    RollsLeft = 3;    
     if (gameEnd == 0) {
+      storeScoreDb();
       DisplayWin();
     }
 };
+function storeScoreDb() {
+    var x = new XMLHttpRequest();
+     x.open("GET","../Yatze/classes/storeScore.php?score="+totalScore,true);
+     x.send();
+}
 function DisplayWin() {
     document.getElementById('WinMessage').innerHTML = "Your Score :" + totalScore;
     var pop  = document.getElementById("popup");
@@ -251,4 +257,15 @@ function DiceValues() {
 }
 function UpdateInstructions() {
   document.getElementById('Instr').innerHTML = "Rolls Left: " + RollsLeft;
+}
+function SwitchForm() {
+  if (document.getElementsByClassName('loginContainer')[0].style.display != "none") {
+    document.getElementsByClassName('loginContainer')[0].style.display = "none"
+    document.getElementsByClassName('createAccountContainer')[0].style.display = "block"
+  }
+  else {
+    document.getElementsByClassName('loginContainer')[0].style.display = "block"
+    document.getElementsByClassName('createAccountContainer')[0].style.display = "none"
+
+  }
 }

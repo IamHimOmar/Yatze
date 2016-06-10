@@ -7,7 +7,7 @@
       $database = "sql7122773";
       $dbc = mysqli_connect($servername, $username, $password,$database)
   		or die ('Error connecting to the database server');
-      $query = "SELECT * FROM users";
+      $query = "SELECT * FROM users order by highscore DESC";
       $result = mysqli_query($dbc,$query)or die('error');
 
       if ($result->num_rows > 0) {
@@ -23,5 +23,5 @@
       } else {
           echo "0 results";
       }
-     ?>  
+     ?>
 </div>

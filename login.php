@@ -11,7 +11,7 @@ session_start();
 
 // define the key-value array
 $keyValueArray=array('title'=>'Yatze','header'=>'templates/header.php',
- 'login'=>'templates/login.php');
+ 'login'=>'templates/login.php','createAccount'=>'templates/createAccount.php');
 // replace placeholders with values
 $parser->parseHtml($keyValueArray);
 // display the page

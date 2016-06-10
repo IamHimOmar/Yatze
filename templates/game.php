@@ -9,5 +9,5 @@
     <div class="instructions">
       <h1 id="Instr">You have 3 rolls. Press Roll Dices to start</h1>
     </div>
-        <button id="roll-button" class="myButton" onclick="RollDices()">Roll Dices</button>
+        <button id="roll-button" class="myButton" onclick="RollDices()">Roll Dices</button>            
 </div>

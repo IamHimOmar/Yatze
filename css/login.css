@@ -1,37 +1,39 @@
-.loginContainer{
+.loginContainer, .createAccountContainer{
 	margin: 40px auto;
 	background: white;
 	width: 50%;
 	padding: 10px 40px 10px 40px;
 	border-radius: 10px;
-	position: relative;  
+	position: relative;
 }
-.loginContainer .loginHeader{
+
+
+.loginContainer .loginHeader , .createAccountContainer .createAccountHeader{
 	text-align: center;
 	border-bottom: 1px solid #EEE;
 }
-.loginContainer .loginForm{
+.loginContainer .loginForm, .createAccountContainer .createAccountForm{
 	padding-top: 20px;
 }
-.loginContainer .field-wrap > *{
+.loginContainer .field-wrap > *, .createAccountContainer .field-wrap > *{
 	width: 100%;
 	font-size: 24px;
 }
-.loginContainer .field-wrap{
+.loginContainer .field-wrap, .createAccountContainer .field-wrap{
 	width: 80%;
 	margin: 0 auto;
 }
-.loginContainer label{
+.loginContainer label, .createAccountContainer label{
   display: block;
 	text-align: center;
 	padding: 5px 0px;
 }
-.loginContainer p{
+.loginContainer p , .createAccountContainer p{
 	padding: 10px 0px;
 	width: auto;
 	text-align: center;
 }
-.loginContainer .button{
+.loginContainer .button, .createAccountContainer .button{
 	display: block;
 	position: relative;
 	padding: 10px 30px;
@@ -45,11 +47,11 @@
 	outline: none;
 	overflow: hidden;
 }
-.loginContainer .new-account{
+.loginContainer .new-account, .createAccountContainer .new-account{
 	width: auto;
 	float: right;
 }
-.loginForm::after{
+.loginForm::after, .creatAccountForm:after{
 	  content: "";
 	  display: block;
 		clear: both;
@@ -61,4 +63,7 @@
 	content: "";
 	display: block;
 	clear: both;
+}
+.createAccountContainer{
+	display: none;
 }
